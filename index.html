@@ -35,6 +35,33 @@ body {
     color: #64748b;
     margin-top: 60px;
 }
+.product-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.product-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+.product-card {
+    list-style: none;
+    display: inline-block;
+    padding: 25px 30px;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    background-color: #020617;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+    transform: translateY(-5px);
+}
 a {
     color: #38bdf8;
     text-decoration: none;
@@ -55,10 +82,14 @@ a {
     </div>
 
     <div class="logo">
-        Our Products
-        <li>
-            <a href="/onlinex/">
-                <span>Online-X VPN - Fast & Stable VPN.</span>
+        <div>
+            Our Products
+        </div>
+        <li class="product-card">
+            <a href="/onlinex/" class="product-link">
+                <img src="onlinex/android-chrome-192x192.png" style="height: 110px; width: auto" />
+
+                <span class="product-name">Online-X VPN <br> Fast & Stable VPN</span>
             </a>
         </li>
         
